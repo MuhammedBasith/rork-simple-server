@@ -27,6 +27,16 @@ app.post('/upload', upload.single('file'), (req, res) => {
   res.status(200).send('archive.txt uploaded successfully');
 });
 
+
+app.get('/download', (req, res) => {
+    const filePath = path.join(uploadDir, 'archive.txt');
+    if (fs.existsSync(filePath)) {
+      res.download(filePath, 'archive.txt');
+    } else {
+      res.status(404).send('archive.txt not found');
+    }
+  });
+
 // Start the server
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
