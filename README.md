@@ -4,7 +4,7 @@ This is a simple Express server to upload `archive.txt` files, created to bypass
 
 Rork (https://rork.app) doesn't let you download code, so this server lets you send an `archive.txt` file (containing your project files) to store it.
 
-The server is live at: https://rork-simple-server.onrender.com
+❌ Please deploy the server on you own by cloning the repo.
 
 ## Features
 - Upload `archive.txt` files using a POST request.
@@ -66,7 +66,7 @@ To recreate your project from `archive.txt` later:
 
 3. To upload to the live server on Render:
    ```bash
-   curl -X POST -F "file=@archive.txt" https://rork-simple-server.onrender.com/upload
+   curl -X POST -F "file=@archive.txt" https://<your server url>/upload
    ```
 
 ## Deployment
