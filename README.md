@@ -69,11 +69,6 @@ To recreate your project from `archive.txt` later:
    curl -X POST -F "file=@archive.txt" https://<your server url>/upload
    ```
 
-## Deployment
-This server is deployed on Render at https://rork-simple-server.onrender.com.
-
-Note: Files uploaded to Render may not persist long-term without a paid plan or persistent disk. Contact Render support for details.
-
 ## Contributing
 Feel free to open issues or submit pull requests if you want to improve the server.
 
